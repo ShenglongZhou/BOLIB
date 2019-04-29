@@ -6,7 +6,7 @@ function w=AllendeStill2013(x,y,keyf,keyxy)
 
 if nargin<4 || isempty(keyxy)
     switch keyf
-    case 'F'; w = -(x(1)+1)^2 + (x(2)-1)^2  +y'*y;
+    case 'F'; w = (x(1)-1)^2 + (x(2)-1)^2  +y'*y;
     case 'G'; w = [-x; x(1)-2; -y]; 
     case 'f'; w = y'*y-2*x'*y;
     case 'g'; w = (y-1).^2-0.25;  
@@ -15,9 +15,9 @@ else
     switch keyf
     case 'F'
         switch keyxy
-        case 'x' ; w = [-2*x(1)-2; 2*x(2)-2];         
+        case 'x' ; w = [2*x(1)-2; 2*x(2)-2];         
         case 'y' ; w = 2*y;         
-        case 'xx'; w = [-2 0; 0 2];
+        case 'xx'; w = [2 0; 0 2];
         case 'xy'; w = zeros(2,2);
         case 'yy'; w = 2*eye(2);
         end 
