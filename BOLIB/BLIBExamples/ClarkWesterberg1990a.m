@@ -9,7 +9,7 @@ if nargin<4 || isempty(keyxy)
     case 'F'; w = (x-3)^2+(y-2)^2;
     case 'G'; w = [x-8; -x];      
     case 'f'; w = (y-5)^2;     
-    case 'g'; w = [-2*x+y-1; x-2*y-2; x+2*y-14];
+    case 'g'; w = [-2*x+y-1; x-2*y+2; x+2*y-14];
     end    
 else
     switch keyf
