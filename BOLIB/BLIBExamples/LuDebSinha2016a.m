@@ -53,6 +53,7 @@ else
         end        
    end   
 end
+w = real(w);
 end
 
 function [w]=Df(x,y,par,keyxy )
