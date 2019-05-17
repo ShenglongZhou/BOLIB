@@ -41,7 +41,7 @@ else
 	case 'g'   
         switch keyxy
         case 'x' ; w = [0; 0];    
-        case 'y' ; w = [0; 0];        
+        case 'y' ; w = [1; -1];        
         case 'xx'; w = [0; 0];
         case 'xy'; w = [0; 0];
         case 'yy'; w = [0; 0];
