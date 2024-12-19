@@ -1,2 +1,2 @@
 # BOLIB
-Bilevel optimization  library of  test problems
+Bilevel optimization library of test problems
